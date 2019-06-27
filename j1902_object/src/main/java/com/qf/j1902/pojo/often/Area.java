@@ -1,4 +1,4 @@
-package com.qf.j1902.pojo.area;
+package com.qf.j1902.pojo.often;
 
 import lombok.Data;
 
