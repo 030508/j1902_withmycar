@@ -1,10 +1,11 @@
-package com.qf.j1902.pojo.Member;
+package com.qf.j1902.pojo.member;
 
 import lombok.Data;
 
 @Data
-public class MemberProfile {
-    private  Integer id;//会员id
+public class MemberProfileLog {
+    private  Integer id;//id
+    private  Integer memberId;//会员id
     private  String nickname;//会员昵称
     private  String name;//会员姓名
     private  Integer gender;//会员性别
@@ -20,6 +21,6 @@ public class MemberProfile {
     private  Integer district;//所在区
     private  String address;//详细地址
     private  Integer registerTime;//会员注册时间
-    private  Integer point;//会员积分
+    private  Integer updateTime;//修改时间
 
 }

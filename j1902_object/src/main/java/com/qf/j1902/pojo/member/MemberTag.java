@@ -1,4 +1,4 @@
-package com.qf.j1902.pojo.Member;
+package com.qf.j1902.pojo.member;
 
 import lombok.Data;
 

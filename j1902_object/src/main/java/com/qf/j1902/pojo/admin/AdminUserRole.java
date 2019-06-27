@@ -1,4 +1,4 @@
-package com.qf.j1902.pojo.user;
+package com.qf.j1902.pojo.admin;
 
 
 import lombok.Data;
