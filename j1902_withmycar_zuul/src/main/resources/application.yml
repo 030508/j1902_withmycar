@@ -18,7 +18,7 @@ zuul:
   routes:
     api-a:
       path: /api-a/**
-      serviceId:
+      serviceId: server-feign
     api-b:
       path: /api-b/**
       serviceId:

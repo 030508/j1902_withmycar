@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/j1902_object/j1902_object.iml" filepath="$PROJECT_DIR$/j1902_object/j1902_object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j1902_withmycar.iml" filepath="$PROJECT_DIR$/j1902_withmycar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j1902_withmycar_controller/j1902_withmycar_controller.iml" filepath="$PROJECT_DIR$/j1902_withmycar_controller/j1902_withmycar_controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j1902_withmycar_dao/j1902_withmycar_dao.iml" filepath="$PROJECT_DIR$/j1902_withmycar_dao/j1902_withmycar_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j1902_withmycar_eurekaserver/j1902_withmycar_eurekaserver.iml" filepath="$PROJECT_DIR$/j1902_withmycar_eurekaserver/j1902_withmycar_eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j1902_withmycar_feign/j1902_withmycar_feign.iml" filepath="$PROJECT_DIR$/j1902_withmycar_feign/j1902_withmycar_feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j1902_withmycar_service/j1902_withmycar_service.iml" filepath="$PROJECT_DIR$/j1902_withmycar_service/j1902_withmycar_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j1902_withmycar_zuul/j1902_withmycar_zuul.iml" filepath="$PROJECT_DIR$/j1902_withmycar_zuul/j1902_withmycar_zuul.iml" />
+    </modules>
+  </component>
+</project>

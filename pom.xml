@@ -9,9 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>j1902_object</module>
-        <module>j1902_withmycar_eurekaserver</module>
-        <module>j1902_withmycar_loginandreg</module>
-        <module>j1902_withmycar_zuul</module>
         <module>j1902_withmycar_dao</module>
         <module>j1902_withmycar_service</module>
         <module>j1902_withmycar_controller</module>

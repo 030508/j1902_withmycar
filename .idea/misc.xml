@@ -9,10 +9,10 @@
         <option value="$PROJECT_DIR$/j1902_withmycar_zuul/pom.xml" />
         <option value="$PROJECT_DIR$/j1902_withmycar_adminuser/pom.xml" />
         <option value="$PROJECT_DIR$/j1902_object/pom.xml" />
-        <option value="$PROJECT_DIR$/j1902_withmycar_loginandreg/pom.xml" />
         <option value="$PROJECT_DIR$/j1902_withmycar_dao/pom.xml" />
         <option value="$PROJECT_DIR$/j1902_withmycar_service/pom.xml" />
         <option value="$PROJECT_DIR$/j1902_withmycar_controller/pom.xml" />
+        <option value="$PROJECT_DIR$/j1902_withmycar_feign/pom.xml" />
       </list>
     </option>
   </component>
