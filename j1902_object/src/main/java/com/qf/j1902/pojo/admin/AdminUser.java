@@ -4,18 +4,36 @@ import lombok.Data;
 
 @Data
 public class AdminUser {
-    private Integer id;  //管理员id
-    private String username; // 管理员登录名
-    private String password; //登录密码
-    private String name; //管理员姓名
-    private String salt;  //盐
-    private String phone; //电话号码
-    private String email; //电子邮件
-    private Integer status; //状态
-    private Integer createTime; //创建时间
-    private Integer isSuper; //是否超级管理员
-    private String consumer; //
-    private String remark; // 备注
-    private String dept; //部门
+    private  Integer id;//id
+    private  String username;//用户名
+    private  String password;//用户密码
+    private  String name;//用户姓名
+    private  String salt;//盐值
+    private  String phone;//手机
+    private  String email;//邮箱
+    private  Integer status;//状态
+    private  Integer createTime;//创建时间
+    private  Integer isSuper;//是否超级管理员
+    private  String consumer;//使用者
+    private  String remark;//备注
+    private  String dept;//部门名称
 
+    @Override
+    public String toString() {
+        return "AdminUser{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", salt='" + salt + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", status=" + status +
+                ", createTime=" + createTime +
+                ", isSuper=" + isSuper +
+                ", consumer='" + consumer + '\'' +
+                ", remark='" + remark + '\'' +
+                ", dept='" + dept + '\'' +
+                '}';
+    }
 }

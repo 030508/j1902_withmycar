@@ -25,3 +25,4 @@ zuul:
   host:
     connect-timeout-millis: 40000
     socket-timeout-millis: 40000
+

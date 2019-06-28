@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: car-loginandreg
+  profiles:
+    include: utils
+
+
+
+
+
