@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c1cbb35-a6f0-4872-8c95-b74fef13b369" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/mapping/AdminUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/mapper/MapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j1902_withmycar_loginandreg/src/main/java/com/qf/j1902/controller/LoginAndRegController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j1902_withmycar_loginandreg/src/main/java/com/qf/j1902/service/AdminUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j1902_withmycar_loginandreg/src/main/java/com/qf/j1902/shiro/MyRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j1902_withmycar_loginandreg/src/main/java/com/qf/j1902/utils/ImgCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/j1902_withmycar_loginandreg/src/main/java/com/qf/j1902/utils/KeySession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/utils/PageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j1902_withmycar_service/src/main/java/com/qf/j1902/impl/AdminUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j1902_withmycar_service/src/main/java/com/qf/j1902/service/AdminUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/J1902ObjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/J1902WithmycarDaoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/admin/AdminUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/admin/AdminUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j1902_object/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_object/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j1902_object/src/test/java/com/qf/j1902/J1902ObjectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/J1902WithmycarDaoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/j1902_withmycar_zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_withmycar_zuul/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/mapping/AdminUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/mapping/AdminUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/mapper/MapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/mapper/MapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/j1902_withmycar_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/j1902_withmycar_service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,6 +24,7 @@
     <ignored path="$PROJECT_DIR$/j1902_withmycar_dao/target/" />
     <ignored path="$PROJECT_DIR$/j1902_withmycar_service/target/" />
     <ignored path="$PROJECT_DIR$/j1902_withmycar_controller/target/" />
+    <ignored path="$PROJECT_DIR$/j1902_withmycar_prowider/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,29 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/j1902_withmycar_controller/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminRoleMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/j1902_withmycar_loginandreg/src/main/java/com/qf/j1902/controller/LoginAndRegController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="36" column="80" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
+            <state relative-caret-position="226">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,31 +49,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminUserMapper.java">
+        <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/admin/AdminRole.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/mapping/AdminUserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="61" column="22" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/J1902WithmycarDaoApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="171">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -108,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -128,6 +82,8 @@
       <find>_i</find>
       <find>_u</find>
       <find>paka</find>
+      <find>long</find>
+      <find>currentPage</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,11 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/user/AdminUser.java" />
-        <option value="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/user/AdminRole.java" />
-        <option value="$PROJECT_DIR$/j1902_withmycar_loginandreg/src/main/java/com/qf/j1902/pojo/AdminMenu.java" />
-        <option value="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/user/AdminMenu.java" />
-        <option value="$PROJECT_DIR$/j1902_object/pom.xml" />
         <option value="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/activity/Activity.java" />
         <option value="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/area/Area.java" />
         <option value="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/activity/ActivityInterface.java" />
@@ -182,14 +133,19 @@
         <option value="$PROJECT_DIR$/j1902_object/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/j1902_object/src/test/java/com/qf/j1902/J1902ObjectApplicationTests.java" />
         <option value="$PROJECT_DIR$/j1902_object/src/test/java/com/qf/j1902/mapper/MapperTest.java" />
-        <option value="$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/mapper/MapperTest.java" />
         <option value="$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/admin/AdminUser.java" />
-        <option value="$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/mapping/AdminUserMapper.xml" />
-        <option value="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminUserMapper.java" />
         <option value="$PROJECT_DIR$/j1902_withmycar_service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/j1902_withmycar_controller/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/j1902_withmycar_service/src/main/java/com/qf/j1902/service/PageBeanService.java" />
+        <option value="$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/utils/PageBean.java" />
+        <option value="$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/mapper/MapperTest.java" />
+        <option value="$PROJECT_DIR$/j1902_withmycar_service/src/main/java/com/qf/j1902/service/AdminUserService.java" />
+        <option value="$PROJECT_DIR$/j1902_withmycar_service/src/main/java/com/qf/j1902/impl/AdminUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminUserMapper.java" />
+        <option value="$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/mapping/AdminUserMapper.xml" />
+        <option value="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminRoleMapper.java" />
       </list>
     </option>
   </component>
@@ -243,25 +199,25 @@
             <path>
               <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
               <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
-              <item name="j1902_withmycar_controller" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_object" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
               <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
-              <item name="j1902_withmycar_controller" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_object" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
               <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
-              <item name="j1902_withmycar_controller" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_object" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
               <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
-              <item name="j1902_withmycar_controller" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_object" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -269,10 +225,127 @@
             <path>
               <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
               <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
-              <item name="j1902_withmycar_controller" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_object" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_object" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_object" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
@@ -315,7 +388,19 @@
               <item name="j1902_withmycar_service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j1902_withmycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j1902_withmycar" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902_withmycar_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j1902" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -367,7 +452,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MapperTest.findall">
+  <component name="RunManager" selected="JUnit.MapperTest.findall2">
     <configuration name="MapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="j1902_withmycar_dao" />
       <extension name="coverage">
@@ -394,6 +479,22 @@
       <option name="PACKAGE_NAME" value="com.qf.j1902.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.qf.j1902.mapper.MapperTest" />
       <option name="METHOD_NAME" value="findall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapperTest.findall2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="j1902_withmycar_dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qf.j1902.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qf.j1902.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.qf.j1902.mapper.MapperTest" />
+      <option name="METHOD_NAME" value="findall2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -441,6 +542,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="J1902WithmycarProwiderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="j1902_withmycar_prowider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.j1902.J1902WithmycarProwiderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="J1902WithmycarServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="j1902_withmycar_service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.j1902.J1902WithmycarServiceApplication" />
@@ -457,6 +565,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapperTest.findall2" />
         <item itemvalue="JUnit.MapperTest.findall" />
         <item itemvalue="JUnit.MapperTest" />
       </list>
@@ -486,7 +595,7 @@
       <updated>1561642203793</updated>
       <workItem from="1561642203995" duration="4090000" />
       <workItem from="1561651419687" duration="1419000" />
-      <workItem from="1561683163004" duration="9408000" />
+      <workItem from="1561683163004" duration="21017000" />
     </task>
     <task id="LOCAL-00002" summary="第一次">
       <created>1561625736089</created>
@@ -530,40 +639,50 @@
       <option name="project" value="LOCAL" />
       <updated>1561636605169</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="pojo">
+      <created>1561707801809</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561707801810</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MapperTest_findall - 2019.06.28 at 15h 09m 03s.xml">
-      <configuration name="MapperTest.findall" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 17h 54m 15s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MapperTest - 2019.06.28 at 15h 09m 28s.xml">
-      <configuration name="MapperTest" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 17h 55m 31s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MapperTest_findall - 2019.06.28 at 15h 09m 41s.xml">
-      <configuration name="MapperTest.findall" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 17h 57m 00s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MapperTest_findall - 2019.06.28 at 15h 11m 50s.xml">
-      <configuration name="MapperTest.findall" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 18h 18m 28s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MapperTest_findall - 2019.06.28 at 15h 13m 54s.xml">
-      <configuration name="MapperTest.findall" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 18h 20m 27s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MapperTest_findall - 2019.06.28 at 15h 14m 39s.xml">
-      <configuration name="MapperTest.findall" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 18h 21m 02s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MapperTest_findall - 2019.06.28 at 15h 15m 19s.xml">
-      <configuration name="MapperTest.findall" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 18h 22m 23s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MapperTest_findall - 2019.06.28 at 15h 16m 48s.xml">
-      <configuration name="MapperTest.findall" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 18h 23m 12s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MapperTest_findall - 2019.06.28 at 15h 18m 18s.xml">
-      <configuration name="MapperTest.findall" configurationId="JUnit" />
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 18h 24m 22s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapperTest_findall2 - 2019.06.28 at 18h 25m 27s.xml">
+      <configuration name="MapperTest.findall2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42814000" />
+    <option name="totallyTimeSpent" value="54423000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -578,7 +697,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27987897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -589,8 +708,8 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32935154" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32935154" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.37883958" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.2320819" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.2440273" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32935154" />
@@ -658,41 +777,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="pojo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/article/ArticleAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/article/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/often/Area.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/activity/ActivityInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/activity/ActivityDealer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/activity/ActivityChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -843,13 +927,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/j1902_withmycar_loginandreg/src/main/java/com/qf/j1902/pojo/admin/AdminUser.java" />
-    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/admin/AdminRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/j1902_withmycar_loginandreg/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -942,13 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/admin/AdminUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -958,18 +1028,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/J1902WithmycarDaoApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="114">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/mapper/MapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,27 +1043,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/mapping/AdminUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/j1902_withmycar_service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,8 +1059,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/j1902_withmycar_controller/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_withmycar_service/src/main/java/com/qf/j1902/service/PageBeanService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/test/java/com/qf/j1902/mapper/MapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/utils/PageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_withmycar_service/src/main/java/com/qf/j1902/service/AdminUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_withmycar_service/src/main/java/com/qf/j1902/impl/AdminUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/admin/AdminUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/resources/mapping/AdminUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="69" column="78" lean-forward="true" selection-start-line="69" selection-start-column="78" selection-end-line="69" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_object/src/main/java/com/qf/j1902/pojo/admin/AdminRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/AdminRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
