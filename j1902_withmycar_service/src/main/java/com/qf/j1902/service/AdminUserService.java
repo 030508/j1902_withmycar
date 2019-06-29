@@ -27,6 +27,5 @@ public interface AdminUserService {
    void updetaPasswordByName(String password,String username);
 
    //修改管理员用户状态信息
-
    void updatestatusByName(Integer status,String username);
 }
