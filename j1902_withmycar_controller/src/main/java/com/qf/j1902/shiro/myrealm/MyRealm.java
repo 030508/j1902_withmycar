@@ -35,7 +35,7 @@ public class MyRealm extends AuthorizingRealm{
         Object principal = principalCollection.getPrimaryPrincipal();
         String adminname=(String) principal;
         //根据用户名查询权限
-        Set<AdminMenu> menu = adminMenuService.findAdminMenusByName(adminname);
+        Set<AdminMenu> menu = adminMenuService.findAdminMenusByUserName(adminname);
         Set<String> menus = new HashSet<>();
         if (menu!=null){
             for (AdminMenu me:menu){

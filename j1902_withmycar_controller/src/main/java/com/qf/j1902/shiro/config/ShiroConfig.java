@@ -36,10 +36,10 @@ public class ShiroConfig {
     public ShiroFilterFactoryBean shiroFilterFactoryBean(@Qualifier("defaultWebSecurityManager") DefaultWebSecurityManager defaultWebSecurityManager){
         ShiroFilterFactoryBean filterFactoryBean = new ShiroFilterFactoryBean();
         filterFactoryBean.setSecurityManager(defaultWebSecurityManager);
-        filterFactoryBean.setLoginUrl("/login");
+        filterFactoryBean.setLoginUrl("/");
         filterFactoryBean.setUnauthorizedUrl("/unauth");//无权访问时的页面
         HashMap<String, String> map = new HashMap<>();
-        map.put("#","authc");//只有登录后才可以访问的网页
+        map.put("/authc/**","authc");//只有登录后才可以访问的网页
         filterFactoryBean.setFilterChainDefinitionMap(map);//设置拦截器
         return filterFactoryBean;
     }
