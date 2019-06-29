@@ -33,4 +33,8 @@ public class MapperTest {
             System.out.println(a);
         }
     }
+    @Test
+    public void tete(){
+        AdminUser oneByName = adminUserMapper.findOneByName("qq");
+    }
 }
