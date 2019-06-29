@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.j1902.mapper.AdminMenuMapper">
+    <resultMap id="menuMap" type="com.qf.j1902.pojo.admin.AdminMenu">
+        <id column="id" property="id"/>
+        <result column="controller" property="controller"/>
+        <result column="action" property="action"/>
+        <result column="name" property="name"/>
+        <result column="classname" property="classname"/>
+        <result column="status" property="status"/>
+        <result column="sort" property="sort"/>
+        <result column="types" property="types"/>
+        <result column="parent_id" property="parentId"/>
+    </resultMap>
+
+
+    <select id="findAll" resultMap="menuMap">
+        SELECT * FROM admin_menu_auth
+    </select>
+    <select id="findAdminMenusByUserName" resultMap="menuMap">
+        SELECT
+        ma.*
+        FROM
+        admin_user u,
+        admin_user_role ur,
+        admin_role r,
+        admin_role_menu rm,
+		admin_menu_auth ma
+        WHERE
+        u.id = ur.user_id
+        And ur.role_id = r.id
+        AND r.id = rm.role_id
+        ANd rm.menu_id = ma.id
+        AND u.username = ${username}
+    </select>
+    <insert id="addAdminMenu" parameterType="com.qf.j1902.pojo.admin.AdminMenu">
+        INSERT INTO
+        admin_menu_auth(
+        controller,
+        action,
+        name,
+        classname,
+        status,
+        sort,
+        types,
+        parent_id)
+        VALUES
+        (${adminMenu.controller},
+        ${adminMenu.action},
+        ${adminMenu.name},
+        ${adminMenu.classname},
+        ${adminMenu.status},
+        ${adminMenu.sort},
+        ${adminMenu.types},
+        ${adminMenu.parentId})
+    </insert>
+
+    <select id="updateStatusById" parameterType="com.qf.j1902.pojo.admin.AdminMenu">
+        UPDATE admin_menu_auth SET  status = ${status} WHERE id = ${id}
+    </select>
+</mapper>
