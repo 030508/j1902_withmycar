@@ -5,4 +5,5 @@ package com.qf.j1902.pojo.test;
  */
 public class Test {
     private String name;
+    private String sex;
 }
