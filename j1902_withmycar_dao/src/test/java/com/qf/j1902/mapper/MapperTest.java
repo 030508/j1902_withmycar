@@ -20,7 +20,15 @@ public class MapperTest {
     private AdminUserMapper adminUserMapper;
     @Test
     public void findall(){
-        List<AdminUser> all = adminUserMapper.findAll();
+       /* List<AdminUser> all = adminUserMapper.findAll();*/
+       /* for (AdminUser a:all){
+            System.out.println(a);
+        }*/
+    }
+    @Test
+    public void findall2(){
+
+        List<AdminUser> all = adminUserMapper.findAll(1,3);
         for (AdminUser a:all){
             System.out.println(a);
         }
