@@ -6,29 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="j1902_withmycar_eurekaserver" />
-        <module name="j1902_withmycar_dao" />
-        <module name="j1902_withmycar_feign" />
         <module name="j1902_object" />
-        <module name="j1902_withmycar_zuul" />
-        <module name="j1902_withmycar_service" />
         <module name="j1902_withmycar_controller" />
+        <module name="j1902_withmycar_dao" />
+        <module name="j1902_withmycar_service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="j1902_withmycar_loginandreg" target="1.8" />
+      <module name="j1902_object" target="1.8" />
+      <module name="j1902_withmycar" target="1.5" />
+      <module name="j1902_withmycar_controller" target="1.8" />
+      <module name="j1902_withmycar_dao" target="1.8" />
+      <module name="j1902_withmycar_service" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="j1902_object" options="-parameters" />
-      <module name="j1902_withmycar_controller" options="-parameters" />
-      <module name="j1902_withmycar_dao" options="-parameters" />
-      <module name="j1902_withmycar_eurekaserver" options="-parameters" />
-      <module name="j1902_withmycar_feign" options="-parameters" />
-      <module name="j1902_withmycar_loginandreg" options="-parameters" />
-      <module name="j1902_withmycar_service" options="-parameters" />
-      <module name="j1902_withmycar_zuul" options="-parameters" />
-    </option>
   </component>
 </project>

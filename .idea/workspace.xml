@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c1cbb35-a6f0-4872-8c95-b74fef13b369" name="Default Changelist" comment="" />
+    <list default="true" id="8c1cbb35-a6f0-4872-8c95-b74fef13b369" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/j1902_withmycar_dao/src/main/java/com/qf/j1902/mapper/OperateLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/j1902_withmycar_eurekaserver/target/" />
@@ -699,14 +702,7 @@
       <option name="project" value="LOCAL" />
       <updated>1561773879499</updated>
     </task>
-    <task id="LOCAL-00010" summary="pojo">
-      <created>1561775156256</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1561775156256</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -742,7 +738,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64143000" />
+    <option name="totallyTimeSpent" value="63817000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -778,7 +774,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.090443686" />
-      <window_info active="true" anchor="bottom" id="Spring" order="14" visible="true" weight="0.3105802" />
+      <window_info active="true" anchor="bottom" id="Spring" order="14" visible="true" weight="0.32935154" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
