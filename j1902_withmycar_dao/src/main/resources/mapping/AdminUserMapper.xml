@@ -37,37 +37,36 @@
         SELECT count(1) FROM  admin_user
     </select>
     <select id="findAll" resultMap="findMap">
-       select <include refid="sqlId"></include> from admin_user limit ${startIndex},${endIndex}
-
+       select <include refid="sqlId"></include> from admin_user limit #{startIndex},#{endIndex}
     </select>
-    <select id="findOneByName" resultMap="findMap">
+    <select id="findOneByName"  resultMap="findMap">
         SELECT
-        <include refid="sqlId"></include>
+        *
         FROM
         admin_user
         WHERE
-        username =${username}
+        username=#{username}
     </select>
     <delete id="deleteOneByName" parameterType="com.qf.j1902.pojo.admin.AdminUser">
         DELETE
         FROM
         admin_user
         WHERE
-        username =${username}
+        username=#{username}
     </delete>
     <update id="updetaOneByName" parameterType="com.qf.j1902.pojo.admin.AdminUser">
        UPDATE
          admin_user
          SET
-        phone =${phone},
-        email =${email}
-        WHERE  username =${username}
+        phone =#{phone},
+        email =#{email}
+        WHERE  username =#{username}
     </update>
     <update id="updetaPasswordByName" parameterType="com.qf.j1902.pojo.admin.AdminUser">
-       UPDATE admin_user SET password =${password}   WHERE  username =${username}
+       UPDATE admin_user SET password =#{password}   WHERE  username =#{username}
     </update>
     <update id="updatestatusByName" parameterType="com.qf.j1902.pojo.admin.AdminUser">
-        UPDATE admin_user SET status =${status}   WHERE  username =${username}
+        UPDATE admin_user SET status =#{status}   WHERE  username =#{username}
     </update>
     <insert id="addByAdminUser" parameterType="com.qf.j1902.pojo.admin.AdminUser">
         INSERT INTO  admin_user(
@@ -84,18 +83,18 @@
         remark,
         dept)
         VALUES
-        (${adminUser.username},
-        ${adminUser.password},
-        ${adminUser.name},
-        ${adminUser.salt},
-        ${adminUser.phone},
-        ${adminUser.email},
-        ${adminUser.status},
-        ${adminUser.createTime},
-        ${adminUser.isSuper},
-        ${adminUser.consumer},
-        ${adminUser.remark},
-        ${adminUser.dept})
+        (#{adminUser.username},
+        #{adminUser.password},
+        #{adminUser.name},
+        #{adminUser.salt},
+        #{adminUser.phone},
+        #{adminUser.email},
+        #{adminUser.status},
+        #{adminUser.createTime},
+        #{adminUser.isSuper},
+        #{adminUser.consumer},
+        #{adminUser.remark},
+        #{adminUser.dept})
     </insert>
 
 </mapper>

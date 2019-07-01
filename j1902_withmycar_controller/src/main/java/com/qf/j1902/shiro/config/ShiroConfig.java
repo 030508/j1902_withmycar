@@ -8,6 +8,7 @@ import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.HashMap;
 
@@ -15,6 +16,7 @@ import java.util.HashMap;
  * 配置shiro相关组件
  * Created by Administrator on 2019/6/28 0028.
  */
+@Configuration
 public class ShiroConfig {
     //创建自定义的realm对象
     @Bean(name = "myrealm")
@@ -62,6 +64,7 @@ public class ShiroConfig {
         credentialsMatcher.setHashAlgorithmName("MD5");
         credentialsMatcher.setHashIterations(1024);
         credentialsMatcher.setStoredCredentialsHexEncoded(true);
+        System.out.println(credentialsMatcher.getHashAlgorithmName());
         return credentialsMatcher;
     }
 }

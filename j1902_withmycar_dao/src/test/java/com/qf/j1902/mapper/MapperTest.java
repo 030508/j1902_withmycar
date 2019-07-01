@@ -18,13 +18,13 @@ import java.util.List;
 public class MapperTest {
     @Autowired
     private AdminUserMapper adminUserMapper;
-    @Test
+    /*@Test
     public void findall(){
-       /* List<AdminUser> all = adminUserMapper.findAll();*/
-       /* for (AdminUser a:all){
+        List<AdminUser> all = adminUserMapper.findAll();
+        for (AdminUser a:all){
             System.out.println(a);
-        }*/
-    }
+        }
+    }*/
     @Test
     public void findall2(){
 
@@ -35,6 +35,10 @@ public class MapperTest {
     }
     @Test
     public void tete(){
-        AdminUser oneByName = adminUserMapper.findOneByName("qq");
+        AdminUser oneByName = adminUserMapper.findOneByName("admin");
+        System.out.println(oneByName);
     }
+
+
+
 }

@@ -10,10 +10,12 @@ import com.qf.j1902.shiro.utils.ImgCode;
 import com.qf.j1902.shiro.utils.MD5;
 import com.qf.j1902.shiro.utils.SessionKey;
 import com.qf.j1902.vo.LoginVo;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+
 import org.apache.shiro.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -49,27 +51,29 @@ public class LoginRegController {
         if (StringUtils.startsWithIgnoreCase(verify,loginVo.getVerrifyCode())){
               try {
                         //从安全管理器获取主体对象
-                        Subject subject = SecurityUtils.getSubject();
-                        //构建令牌
+                 Subject subject = SecurityUtils.getSubject();
+                 //构建令牌
                         UsernamePasswordToken token = new UsernamePasswordToken(loginVo.getLoginName(), loginVo.getPassword());
                         //登录
                         subject.login(token);
+                  System.out.println("失败");
                         if (subject.isAuthenticated()) {
                             session.setAttribute(SessionKey.ADMINUSERNAME,loginVo.getLoginName());
                             Set<AdminMenu> menus = adminMenuService.findAdminMenusByUserName(loginVo.getLoginName());
                             session.setAttribute(SessionKey.ADMINUSERMENUS,menus);
                             List<AdminRole> roles = adminRoleService.findAdminRolesByUserName(loginVo.getLoginName());
                             session.setAttribute(SessionKey.ADMINROLE,roles);
-                            return "/main";//如果登录成功返回的页面
+                            return "main";//如果登录成功返回的页面
                         }
                     }catch (AuthenticationException e){
-                        e.printStackTrace();
+                  System.out.println("用户名密码错误");
+                  return "redirect:/";
                     }
         }else {
+            System.out.println("验证码比对失败");
             return "redirect:/";//验证码无效
         }
-
-
+        System.out.println("失败");
         return "redirect:/";//未登录成功返回的页面
     }
 

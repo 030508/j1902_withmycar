@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface AdminUserMapper {
     List<AdminUser> findAll(@Param("startIndex") Integer startIndex,@Param("endIndex") Integer endIndex); //查询所有用户
-    AdminUser findOneByName(String username);//根据用户名查询
+    AdminUser findOneByName(@Param("username") String username);//根据用户名查询
     void deleteOneByName(String username);//根据用户名删除用户
     void updetaOneByName(@Param("phone") String phone,@Param("email") String email,@Param("username") String username);
     void updetaPasswordByName(@Param("password") String password,@Param("username") String username); //修改密码
