@@ -9,4 +9,5 @@ import lombok.Data;
 public class LoginVo {
     private String loginName;
     private String password;
+    private String verrifyCode;
 }
