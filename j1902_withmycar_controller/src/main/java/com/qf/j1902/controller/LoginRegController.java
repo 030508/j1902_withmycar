@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginRegController {
     //显示登录视图
-    @RequestMapping("/login")
+    @RequestMapping("/")
     public String loginView(){
         return "login";
     }
@@ -38,4 +38,5 @@ public class LoginRegController {
 
         return "#";//未登录成功返回的页面
     }
+
 }
