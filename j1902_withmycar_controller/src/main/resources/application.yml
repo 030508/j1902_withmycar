@@ -1,25 +1,20 @@
 
-#eureka:
-#  client:
- #   service-url:
- #     defaultZone: http://localhost:8761/eureka
 server:
-  port: 10001
-spring:
- # application:
- #   name: server-provider
+  port: 8080
 
+
+
+
+
+mybatis:
+  type-aliases-package: com.qf.j1902.pojo
+  mapper-locations: classpath:mapping/*.xml
+spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
     url: jdbc:mysql://10.12.159.25:3306/car?serverTimezone=UTC
     type: com.alibaba.druid.pool.DruidDataSource
-
-
   profiles:
     include: utils
-
-mybatis:
-  type-aliases-package: com.qf.j1902.pojo
-  mapper-locations: classpath:mapping/*.xml

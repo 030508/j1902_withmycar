@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
  */
 @ControllerAdvice //标识为控制层拦截器
 public class ExceptionController {
-    @ExceptionHandler(value = UnauthorizedException.class)
+    @ExceptionHandler(value=Exception.class)
     public String defaultErrorHandler(HttpServletRequest request,Exception e){
         return "unauth";
     }

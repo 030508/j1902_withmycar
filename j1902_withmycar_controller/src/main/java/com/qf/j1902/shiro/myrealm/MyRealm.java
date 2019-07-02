@@ -32,7 +32,6 @@ public class MyRealm extends AuthorizingRealm{
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         //获取用户名
-        System.out.println("Myrealm");
         Object principal = principalCollection.getPrimaryPrincipal();
         String adminname=(String) principal;
         //根据用户名查询权限
@@ -53,7 +52,7 @@ public class MyRealm extends AuthorizingRealm{
         String username =(String) authenticationToken.getPrincipal();
         AdminUser user = adminUserService.findOneByName(username);
         SimpleAuthenticationInfo authenticationInfo=null;
-        if (authenticationInfo!=null){
+        if (user!=null){
             authenticationInfo= new SimpleAuthenticationInfo(username, user.getPassword(), this.getName());
         }
         return authenticationInfo;
