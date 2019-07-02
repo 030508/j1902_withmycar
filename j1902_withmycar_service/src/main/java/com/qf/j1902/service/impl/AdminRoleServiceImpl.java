@@ -18,7 +18,7 @@ public class AdminRoleServiceImpl implements AdminRoleService {
     }
 
     @Override
-    public List<AdminRole> findAdminRolesByUserName(String username) {
+    public AdminRole findAdminRolesByUserName(String username) {
         return adminRoleMapper.findAdminRolesByUserName(username);
     }
 

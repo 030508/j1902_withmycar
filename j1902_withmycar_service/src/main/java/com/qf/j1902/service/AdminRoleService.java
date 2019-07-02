@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface AdminRoleService {
     List<AdminRole> findAll();  //查询所有角色
-    List<AdminRole> findAdminRolesByUserName(String username); //查询单个管理员拥有的角色
+    AdminRole findAdminRolesByUserName(String username); //查询单个管理员拥有的角色
 
     void  deleteAdminRoleById(Integer id);  //根据id删除角色
     void  addAdminRoleById(AdminRole adminRole);  //添加角色信息

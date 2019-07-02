@@ -61,8 +61,8 @@ public class LoginRegController {
                             session.setAttribute(SessionKey.ADMINUSERNAME,loginVo.getLoginName());
                             Set<AdminMenu> menus = adminMenuService.findAdminMenusByUserName(loginVo.getLoginName());
                             session.setAttribute(SessionKey.ADMINUSERMENUS,menus);
-                            List<AdminRole> roles = adminRoleService.findAdminRolesByUserName(loginVo.getLoginName());
-                            session.setAttribute(SessionKey.ADMINROLE,roles);
+                            AdminRole role = adminRoleService.findAdminRolesByUserName(loginVo.getLoginName());
+                            session.setAttribute(SessionKey.ADMINROLE,role);
                             return "main";//如果登录成功返回的页面
                         }
                     }catch (AuthenticationException e){

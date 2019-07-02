@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>管理首页</title>
+  <style type="text/css">
+      .span_class{
+          font-size: 16px;
+          color: darkgreen;
+      }
+      .li_class{
+          font-size: 12px;
+          color: greenyellow;
+      }
+      #menu_id{
+          width: 20%;
+          height: 70%;
+          float: left;
+          background-color: cyan;
+      }
+      #context_id{
+        width: 79%;
+        height:70%;
+        background-color: darkgrey;
+      }
+  </style>
+</head>
+<body>
+  <div>
+    <div style="height: 35px ; background-color: azure;">
+       <img src="/imges/logo.jpg" style="height: 40px ; width: 40px ; float: left">
+        <i style="font-size: 30px ; color: blue">“伴我汽车”管理平台</i>
+      <i  style="margin-left: 250px">时间：<span class=""> </span></i>
+      <i  style="margin-left: 40px">用户：<span id="userName_id" class="" th:text="${session.adminUserName}"> </span></i>
+      <i  style="margin-left: 40px">所属角色：<i class="" th:text="${session.adminRole.name}"> </i></i>
+      <i  style="margin-left: 20px"><a  href="/logout"> 退出</a> </i>
+    </div>
+    <hr/>
+  </div>
+  <div id="menu_id">
+    <div>
+
+     <ul class=""  >
+       <li>
+          <span class="span_class "   >会员管理</span>
+         <ul class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">会员管理</i></a> </li>
+         </ul>
+      </li><li>
+        <span class="span_class "  >资讯管理</span>
+       <ul class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">  草稿箱</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">资讯审核</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">资讯发布</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">资讯列表</i></a> </li>
+        </ul>
+      </li>
+       <li>
+         <span class="span_class "  >标签定义</span>
+         <ul class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">标签定义</i></a> </li>
+         </ul>
+       </li>
+       <li>
+        <span class="span_class "   >车型库管理</span>
+       <ul  class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">品牌管理</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">厂商管理</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">车系管理</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">车款管理</i></a> </li>
+           <li  class=" main li li_class "><a href="#" > <i class="">参数分类管理</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">参数管理</i></a> </li>
+        </ul>
+      </li><li>
+        <span class="span_class "  >自有商品管理</span>
+       <ul  class=" main ul ">
+           <li  class=" main li li_class "><a href="#" > <i class="">自有商品管理</i></a> </li>
+        </ul>
+      </li><li>
+        <span class="span_class " >活动管理</span>
+       <ul class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">活动列表</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">推荐活动</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">类型管理</i></a> </li>
+           <li class=" main li li_class "><a href="#" > <i class="">渠道管理</i></a> </li>
+        </ul>
+      </li><li>
+        <span class="span_class " >消息管理</span>
+       <ul class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">消息管理</i></a> </li>
+        </ul>
+      </li><li>
+        <span class="span_class " >标签管理</span>
+       <ul class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">标签管理</i></a> </li>
+        </ul>
+      </li><li>
+        <span class="span_class " >角色管理</span>
+       <ul class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">角色管理</i></a> </li>
+        </ul>
+      </li><li>
+        <span class="span_class "  >管理员列表</span>
+       <ul  class=" main ul ">
+           <li  class=" main li li_class "><a href="#" > <i class="">管理员列表</i></a> </li>
+        </ul>
+      </li>
+       <li>
+          <span class="span_class " >操作日志</span>
+         <ul class=" main ul ">
+           <li class=" main li li_class "><a href="#" > <i class="">操作日志</i></a> </li>
+        </ul>
+      </li><li>
+        <span class="span_class " >个人中心</span>
+       <ul class=" main ul ">
+           <li class=" main li li_class "><a href="/personalCenter" > <i class="">个人中心</i></a> </li>
+        </ul>
+      </li>
+     </ul>
+    </div>
+  </div>
+  <div id="context_id">
+      <p>< 操作日志</p>
+      <br/>
+      <a id="personnal_data" href="#" class="" >个人资料</a><a id="change_pwd" href="#" class="">修改密码</a>
+      <br/>
+    <div>
+        <div id="personnal_data_div" class="">
+        <form action="" method="" >
+           <i class="">姓名<input class="" type="text" th:value="${session.adminUser.name}" disabled /></i><br/>
+           <i class="">个人账号<input id="username" class="" type="text"  th:value="${session.adminUser.username}" disabled /></i><br/>
+           <i class="">手机号<input class="" id="phone" type="number"   th:value="${session.adminUser.phone}"  /></i><br/>
+           <i class="">所属角色<input class="" type="text"  th:value="${session.adminRole.name}" disabled /></i><br/>
+           <i class="">邮箱<input class="" id="email" type="text"  th:value="${session.adminUser.email}" disabled /></i><br/>
+           <i class="">所属部门<input class="" type="text"  th:value="${session.adminUser.dept}" disabled /></i><br/>
+            <button id="personnal_data_btn" type="button" class="" >提交修改</button>
+        </form>
+        </div>
+        <div id="change_pwd_div" class="">
+        <form action=""  method="" >
+            <input id="password" th:value="${session.adminUser.password}"   />
+            <i  class="">旧密码:<input id="oldPwd" class="" type="password" value=""  /></i>
+            <i id="ispassword" style="color: red"></i><br/>
+            <i class="">新密码:<input id="newPwd" class="" type="password"  value=""  /></i><br/>
+            <i class="">确认新密码:<input id="newPwd2" class="" type="password"   value=""  /></i>
+            <i id="isUpdate" style="color: red"></i><br/>
+            <button id="change_pwd_btn" type="button" class="" >提交修改</button>
+        </form>
+        </div>
+    </div>
+
+  </div>
+
+<script src="/jqurey/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#change_pwd_div ,#password").hidden();
+        $("#personnal_data").on("click" ,function () {
+            $("#personnal_data_div").show();
+            $("#change_pwd_div").hidden();
+        })
+        $("#change_pwd").on("click" ,function () {
+            $("#change_pwd_div").show();
+            $("#personnal_data_div").hidden();
+        })
+
+        var xhr ;
+        if (window.XMLHttpRequest){
+            xhr = new XMLHttpRequest();
+        }else {
+            xhr = new xhr ;
+        }
+
+        $("#personnal_data_btn").on("click",function () {
+            var username = $("#username").val();
+            var phone = $("#phone").val();
+            var phone =$("#email").val();
+            var url = "/authc/updatePersonnal?username="+username+"&phone="+phone+"&phone="+phone;
+            xhr.open("post",url,true);
+            xhr.onreadystatechange = function (ev) {
+                if (xhr.readyState == 4 && xhr.status ==200){
+                    alert("个人资料修改成功!");
+                }
+            }
+            xhr.send();
+        })
+        $("#change_pwd_btn").on("click",function () {
+            var pwd = $("#password").val();
+            var oldpwd = $("#oldPwd").val();
+            var newPwd = $("#newPwd").val();
+            var newPwd2 = $("#newPwd2").val();
+            var userName_id = $("#userName_id").text();
+            if (pwd == oldpwd) {
+                if (newPwd == newPwd2) {
+                    var url = "/authc/updatePassword?username="+userName_id+"&password="+newPwd2;
+                    xhr.open("post",url,true);
+                    xhr.onreadystatechange = function (ev) {
+                        if (xhr.readyState == 4 && xhr.status ==200){
+                            alert("密码修改成功!");
+                        }
+                    }
+                    xhr.send();
+                }else {
+                    var isUpdate = $("#isUpdate").val("密码不一致");
+                }
+            }else {
+                var ispassword = $("#ispassword").val("密码错误");
+            }
+        })
+    })
+    
+</script>
+</body>
+</html>

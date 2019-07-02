@@ -1,6 +1,7 @@
 package com.qf.j1902.mapper;
 
 
+import com.qf.j1902.pojo.admin.AdminMenu;
 import com.qf.j1902.pojo.admin.AdminUser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,6 +17,8 @@ import java.util.List;
 @SpringBootTest
 @Configuration("com.qf.j1902.mapper")
 public class MapperTest {
+    @Autowired
+    private  AdminMenuMapper adminMenuMapper;
     @Autowired
     private AdminUserMapper adminUserMapper;
     /*@Test
@@ -39,6 +42,12 @@ public class MapperTest {
         System.out.println(oneByName);
     }
 
-
+    @Test
+    public void qwqw(){
+        List<AdminMenu> admin = adminMenuMapper.findAdminMenusByUserName("admin");
+        for (AdminMenu menu: admin){
+            System.out.println(menu);
+        }
+    }
 
 }
